@@ -66,4 +66,14 @@ router.delete('/:id', async (req, res) => {
     }
 });
 
+// Delete all products
+router.delete('/', async (req, res) => {
+    try {
+      await Product.deleteMany({});
+      res.status(200).send({ message: 'All items deleted successfully' });
+    } catch (error) {
+      res.status(500).send({ error: 'An error occurred while deleting items' });
+    }
+  });
+
 module.exports = router;
