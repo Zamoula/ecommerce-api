@@ -1,0 +1,278 @@
+{
+    "info": {
+      "name": "Metrics API",
+      "_postman_id": "12345678-1234-1234-1234-123456789012",
+      "description": "Collection to test Metrics API",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Customer Metrics",
+        "item": [
+          {
+            "name": "Total Customers",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/metrics/customers/total",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["metrics", "customers", "total"]
+              }
+            }
+          },
+          {
+            "name": "New Customers",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/metrics/customers/new",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["metrics", "customers", "new"]
+              }
+            }
+          },
+          {
+            "name": "Customer Retention Rate",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/metrics/customers/retention-rate",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["metrics", "customers", "retention-rate"]
+              }
+            }
+          },
+          {
+            "name": "Customer Churn Rate",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/metrics/customers/churn-rate",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["metrics", "customers", "churn-rate"]
+              }
+            }
+          },
+          {
+            "name": "Customer Lifetime Value",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/metrics/customers/lifetime-value",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["metrics", "customers", "lifetime-value"]
+              }
+            }
+          },
+          {
+            "name": "Customer Acquisition Cost",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/metrics/customers/acquisition-cost",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["metrics", "customers", "acquisition-cost"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Product Metrics",
+        "item": [
+          {
+            "name": "Total Products",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/metrics/products/total",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["metrics", "products", "total"]
+              }
+            }
+          },
+          {
+            "name": "Best Selling Products",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/metrics/products/best-selling",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["metrics", "products", "best-selling"]
+              }
+            }
+          },
+          {
+            "name": "Inventory Turnover",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/metrics/products/inventory-turnover",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["metrics", "products", "inventory-turnover"]
+              }
+            }
+          },
+          {
+            "name": "Product Return Rate",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/metrics/products/return-rate",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["metrics", "products", "return-rate"]
+              }
+            }
+          },
+          {
+            "name": "Average Product Rating",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/metrics/products/average-rating",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["metrics", "products", "average-rating"]
+              }
+            }
+          },
+          {
+            "name": "Product Stock Levels",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/metrics/products/stock-levels",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["metrics", "products", "stock-levels"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Order Metrics",
+        "item": [
+          {
+            "name": "Total Orders",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/metrics/orders/total",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["metrics", "orders", "total"]
+              }
+            }
+          },
+          {
+            "name": "Average Order Value",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/metrics/orders/average-value",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["metrics", "orders", "average-value"]
+              }
+            }
+          },
+          {
+            "name": "Order Fulfillment Time",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/metrics/orders/fulfillment-time",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["metrics", "orders", "fulfillment-time"]
+              }
+            }
+          },
+          {
+            "name": "Order Return Rate",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/metrics/orders/return-rate",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["metrics", "orders", "return-rate"]
+              }
+            }
+          },
+          {
+            "name": "Total Revenue",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/metrics/orders/revenue",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["metrics", "orders", "revenue"]
+              }
+            }
+          },
+          {
+            "name": "Order Frequency",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3000/metrics/orders/frequency",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3000",
+                "path": ["metrics", "orders", "frequency"]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

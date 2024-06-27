@@ -6,6 +6,7 @@ const cors = require('cors');
 const productRoutes = require('./src/routes/products');
 const customerRoutes = require('./src/routes/customers');
 const orderRoutes = require('./src/routes/orders');
+const metricsRoutes = require('./src/routes/metrics');
 
 const app = express();
 const PORT = 3000;
@@ -28,6 +29,7 @@ mongoose.connect('mongodb+srv://jamelmrad000:cntrFgl0SJdJ9fOs@cluster0.s88rsdr.m
 app.use('/products', productRoutes);
 app.use('/customers', customerRoutes);
 app.use('/orders', orderRoutes);
+app.use('/metrics', metricsRoutes);
 
 app.listen(PORT, () => {
     console.log('Server is running');
